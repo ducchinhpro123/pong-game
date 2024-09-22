@@ -90,13 +90,13 @@ int main(void)
             is_collision = true;
             ball.velocity.x = -ball.velocity.x;
         }
-        else if (ball.position.x <= (paddle_left.position.x - 30)) // Paddle left misses ball
+        else if (ball.position.x <= (paddle_left.position.x - 30)) // Paddle left misses the ball
         {
             ball.position.x = window_width/2.0f;
             ball.position.y = window_height/2.0f;
             paddle_left.point ++;
         } 
-        else if (ball.position.x >= (paddle_right.position.x + 30)) // Paddle right misses ball
+        else if (ball.position.x >= (paddle_right.position.x + 30)) // Paddle right misses the ball
         {
             ball.position.x = window_width/2.0f;
             ball.position.y = window_height/2.0f;
